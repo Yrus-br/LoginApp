@@ -53,11 +53,11 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func forgotUserName() {
-        wrongPassOrLog(title: "User name", message: "Your name is Alex 🤓")
+        wrongPassOrLog(title: "User name 🤓", message: "Your name is Alex")
     }
     
     @IBAction func forgotPassword() {
-        wrongPassOrLog(title: "Password", message: "Password is Efimov 🫡")
+        wrongPassOrLog(title: "Password 🫡", message: "Password is Efimov")
     }
 }
 
