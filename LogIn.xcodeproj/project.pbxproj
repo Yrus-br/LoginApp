@@ -18,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		3F181F9128E72C0500CD4749 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		3F1F260B28EBA678000211E4 /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutMe.swift; path = ../../../AboutMe/AboutMe.swift; sourceTree = "<group>"; };
 		3FD03BE028E703B200051AD5 /* LogIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD03BE328E703B200051AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD03BE528E703B200051AD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 				3FD03BE328E703B200051AD5 /* AppDelegate.swift */,
 				3FD03BE528E703B200051AD5 /* SceneDelegate.swift */,
 				3FD03BE728E703B200051AD5 /* LoginViewController.swift */,
+				3F1F260B28EBA678000211E4 /* AboutMe.swift */,
 				3F181F9128E72C0500CD4749 /* WelcomeViewController.swift */,
 				3FD03BE928E703B200051AD5 /* Main.storyboard */,
 				3FD03BEC28E703B200051AD5 /* Assets.xcassets */,

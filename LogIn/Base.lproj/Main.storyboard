@@ -103,17 +103,17 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleFootnote"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="forgotUserName" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2z-DX-VBg"/>
+                                            <action selector="forgotUserNameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeS-9N-sUB"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcK-wD-F8b">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcK-wD-F8b">
                                         <rect key="frame" x="193.66666666666663" y="0.0" width="190.33333333333337" height="29.666666666666668"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleFootnote"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="forgotPassword" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6y-rI-vu3"/>
+                                            <action selector="forgotUserNameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wJ-cR-tdF"/>
                                         </connections>
                                     </button>
                                 </subviews>
