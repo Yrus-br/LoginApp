@@ -177,7 +177,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHQ-Q6-GFf">
                                 <rect key="frame" x="15" y="114.5" width="290" height="325"/>
-                                <mutableString key="text">Hi! My name is Yurii, im 22. I am the administrator of the online store. I am currently studying on the Swiftbook courses. I have been thinking about starting programming for a long time, I started with java script like many people. I wanted to do mobile development and I thought I could do it with ReactNative, but then I preferred Swift. I studied Swift at Codecademy, but it was a very hard experience. Codecademy has unstructured tutorials even for regular Swift code syntax.  I'm really glad I chose SwiftBook and I hope I can become a good mobile developer.</mutableString>
+                                <mutableString key="text">Hi! My name is Yurii, I'm 22. I am the administrator of the online store. I am currently studying on the Swiftbook courses. I have been thinking about starting programming for a long time, I started with JavaScript like many people. I wanted to do mobile development and I thought I could do it with ReactNative, but then I preferred Swift. I studied Swift at Codecademy, but it was a very hard experience. Codecademy has unstructured tutorials even for regular Swift code syntax.  I'm really glad I chose SwiftBook and I hope I can become a good mobile developer.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -294,6 +294,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="oGU-uP-kJM"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pts-Zg-yeS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
