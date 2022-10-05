@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     private let userInfo = UserName.getUserName()
-        
+
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordTF.isSecureTextEntry = true
@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
         guard let tabBarVC = segue.destination as? UITabBarController else {
             return
         }
-        guard let viewContollersTB = tabBarVC.viewControllers else {return}
+        guard let viewContollersTB = tabBarVC.viewControllers else { return }
         viewContollersTB.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.userName = userInfo.name

@@ -10,7 +10,7 @@ import UIKit
 class ResumeViewController: UIViewController {
     
     private let userInfo = UserName.getUserName()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
