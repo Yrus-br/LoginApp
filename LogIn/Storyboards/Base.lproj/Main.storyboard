@@ -161,6 +161,7 @@
                         <outlet property="labelCity" destination="zCc-Uh-YlM" id="bwG-CC-Ygb"/>
                         <outlet property="labelName" destination="xNO-2A-DAK" id="buu-oW-Os5"/>
                         <outlet property="labelSecondName" destination="44n-sM-emo" id="J1K-sA-rce"/>
+                        <outlet property="userPhoto" destination="tQV-0P-g2Y" id="udV-xf-FOF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FLe-KC-JVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -177,7 +178,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHQ-Q6-GFf">
                                 <rect key="frame" x="15" y="114.5" width="290" height="325"/>
-                                <mutableString key="text">Hi! My name is Yurii, I'm 22. I am the administrator of the online store. I am currently studying on the Swiftbook courses. I have been thinking about starting programming for a long time, I started with JavaScript like many people. I wanted to do mobile development and I thought I could do it with ReactNative, but then I preferred Swift. I studied Swift at Codecademy, but it was a very hard experience. Codecademy has unstructured tutorials even for regular Swift code syntax.  I'm really glad I chose SwiftBook and I hope I can become a good mobile developer.</mutableString>
+                                <string key="text">Hi! My name is Yurii, I'm 22. I am the administrator of the online store. I am currently studying on the Swiftbook courses. I have been thinking about starting programming for a long time, I started with JavaScript like many people. I wanted to do mobile development and I thought I could do it with ReactNative, but then I preferred Swift. I studied Swift at Codecademy, but it was a very hard experience. Codecademy has unstructured tutorials even for regular Swift code syntax.  I'm really glad I chose SwiftBook and I hope I can become a good mobile developer.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -192,6 +193,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" style="editor" id="Zs2-d0-is0"/>
+                    <connections>
+                        <outlet property="bioLabel" destination="gHQ-Q6-GFf" id="jYP-Rp-uHI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUt-UB-uoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

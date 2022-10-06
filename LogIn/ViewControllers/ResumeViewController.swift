@@ -9,11 +9,13 @@ import UIKit
 
 class ResumeViewController: UIViewController {
     
-    private let userInfo = UserName.getUserName()
+    @IBOutlet var bioLabel: UILabel!
+    
+    var userInfo: UserDescription!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
-        navigationItem.title = "\(userInfo.name)'s bio"
+        bioLabel.text = userInfo.person.bio
     }
 }

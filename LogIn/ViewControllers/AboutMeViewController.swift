@@ -9,17 +9,30 @@ import UIKit
 
 class AboutMeViewController: UIViewController {
     
-    private let userInfo = UserName.getUserName()
-    
     @IBOutlet var labelName: UILabel!
     @IBOutlet var labelSecondName: UILabel!
     @IBOutlet var labelCity: UILabel!
+    @IBOutlet var userPhoto: UIImageView! {
+        didSet {
+            userPhoto.layer.cornerRadius = userPhoto.frame.height / 2
+        }
+    }
+    
+    var userInfo: UserDescription!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelName.text = userInfo.name
-        labelSecondName.text = userInfo.secondName
-        labelCity.text = userInfo.city
+        view.addVerticalGradientLayer()
+        labelName.text = userInfo.person.name
+        labelSecondName.text = userInfo.person.secondName
+        labelCity.text = userInfo.person.city
+        userPhoto.image = UIImage(named: userInfo.person.photo)
+        navigationItem.title = "About \(userInfo.person.name)"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resumeVc = segue.destination as? ResumeViewController else { return }
+        resumeVc.userInfo = userInfo
     }
 }
 

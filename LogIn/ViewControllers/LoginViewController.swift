@@ -12,12 +12,12 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    private let userInfo = UserName.getUserName()
-
+    let userInfo = UserDescription.getUsersData()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordTF.isSecureTextEntry = true
-        userNameTF.text = userInfo.name
+        userNameTF.text = userInfo.login
         passwordTF.text = userInfo.password
     }
     
@@ -31,23 +31,22 @@ class LoginViewController: UIViewController {
             return
         }
         guard let viewContollersTB = tabBarVC.viewControllers else { return }
-        viewContollersTB.forEach { viewController in
-            if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.userName = userInfo.name
-                welcomeVC.view.addVerticalGradientLayer()
+        
+        viewContollersTB.forEach {
+            if let welcomeVC = $0 as? WelcomeViewController {
+                welcomeVC.userInfo = userInfo
                 
-            } else if let navigationVC = viewController as? UINavigationController {
+            } else if let navigationVC = $0 as? UINavigationController {
                 guard let aboutMeVc = navigationVC.topViewController as? AboutMeViewController else {
                     return
                 }
-                aboutMeVc.view.addVerticalGradientLayer()
-                aboutMeVc.navigationItem.title = "About \(userInfo.name)"
+                aboutMeVc.userInfo = userInfo
             }
         }
     }
     
     @IBAction func logInbuttonDidTapped() {
-        guard userNameTF.text == userInfo.name, passwordTF.text == userInfo.password else {
+        guard userNameTF.text == userInfo.login, passwordTF.text == userInfo.password else {
             wrongPassOrLog(
                 title: "Invalid login or password",
                 message: "Please, enter correct login and password",
@@ -59,16 +58,15 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func unwindSegueToWelcome(segue: UIStoryboardSegue) {
-        userNameTF.text = userInfo.name
+        userNameTF.text = userInfo.login
         passwordTF.text = userInfo.password
     }
     
     @IBAction func forgotUserName(sender: UIButton) {
         sender.tag == 0
-        ? wrongPassOrLog(title: "Wrong name?", message: "Your name is \(userInfo.name) 😉")
+        ? wrongPassOrLog(title: "Wrong name?", message: "Your name is \(userInfo.login) 😉")
         : wrongPassOrLog(title: "Oops!", message: "Your password is \(userInfo.password) 😉")
     }
-    
     
     private func wrongPassOrLog(
         title: String,
