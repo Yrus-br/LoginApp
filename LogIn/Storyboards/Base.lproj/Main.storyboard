@@ -176,25 +176,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHQ-Q6-GFf">
-                                <rect key="frame" x="15" y="114.5" width="290" height="325"/>
-                                <string key="text">Hi! My name is Yurii, I'm 22. I am the administrator of the online store. I am currently studying on the Swiftbook courses. I have been thinking about starting programming for a long time, I started with JavaScript like many people. I wanted to do mobile development and I thought I could do it with ReactNative, but then I preferred Swift. I studied Swift at Codecademy, but it was a very hard experience. Codecademy has unstructured tutorials even for regular Swift code syntax.  I'm really glad I chose SwiftBook and I hope I can become a good mobile developer.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWx-7W-4Ez">
+                                <rect key="frame" x="40" y="117" width="240" height="382"/>
+                                <mutableString key="text">Hi! My name is Yurii, I'm 22. I am the administrator of the online store. I am currently studying on the Swiftbook courses. I have been thinking about starting programming for a long time, I started with JavaScript like many people. I wanted to do mobile development and I thought I could do it with ReactNative, but then I preferred Swift. I studied Swift at Codecademy, but it was a very hard experience. Codecademy has unstructured tutorials even for regular Swift code syntax.  I'm really glad I chose SwiftBook and I hope I can become a good mobile developer.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F7X-SA-SDe"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gHQ-Q6-GFf" firstAttribute="top" secondItem="F7X-SA-SDe" secondAttribute="top" constant="10" id="8us-Aq-FPJ"/>
-                            <constraint firstItem="F7X-SA-SDe" firstAttribute="trailing" secondItem="gHQ-Q6-GFf" secondAttribute="trailing" constant="15" id="SfV-SA-bZ0"/>
-                            <constraint firstItem="gHQ-Q6-GFf" firstAttribute="leading" secondItem="F7X-SA-SDe" secondAttribute="leading" constant="15" id="f2L-n3-18Y"/>
+                            <constraint firstItem="mWx-7W-4Ez" firstAttribute="leading" secondItem="F7X-SA-SDe" secondAttribute="leading" constant="40" id="2rk-4h-4Lp"/>
+                            <constraint firstItem="mWx-7W-4Ez" firstAttribute="top" secondItem="F7X-SA-SDe" secondAttribute="top" constant="12.5" id="LBb-a2-GgM"/>
+                            <constraint firstItem="F7X-SA-SDe" firstAttribute="trailing" secondItem="mWx-7W-4Ez" secondAttribute="trailing" constant="40" id="i8w-dw-WAf"/>
+                            <constraint firstItem="F7X-SA-SDe" firstAttribute="bottom" secondItem="mWx-7W-4Ez" secondAttribute="bottom" constant="20" id="rlI-mU-k7z"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" style="editor" id="Zs2-d0-is0"/>
                     <connections>
-                        <outlet property="bioLabel" destination="gHQ-Q6-GFf" id="jYP-Rp-uHI"/>
+                        <outlet property="bioTextView" destination="mWx-7W-4Ez" id="mO6-um-RIh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUt-UB-uoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -337,6 +338,9 @@
         <image name="figure.walk.arrival" catalog="system" width="125" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="rectangle.inset.filled.and.person.filled" catalog="system" width="128" height="87"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

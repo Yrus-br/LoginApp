@@ -9,13 +9,12 @@ import UIKit
 
 class ResumeViewController: UIViewController {
     
-    @IBOutlet var bioLabel: UILabel!
-    
+    @IBOutlet var bioTextView: UITextView!
     var userInfo: UserDescription!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
-        bioLabel.text = userInfo.person.bio
+        bioTextView.text = userInfo.person.bio
     }
 }
